@@ -1,4 +1,4 @@
-# Bitcoin Seed Phrase Word List Generator
+# BIP39 Seed Phrase Word List Generator
 
 A simple Go application that generates a randomized list of all BIP39 seed words (used for Bitcoin and other cryptocurrency wallets) and displays them in an HTML format for easy reference, printing, or saving as PDF.
 
