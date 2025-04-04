@@ -53,11 +53,11 @@ The generated HTML file includes:
 
 ## Security Considerations
 
-This tool is intended for educational and reference purposes only. Please note:
+This tool uses cryptographically secure random number generation (`crypto/rand`) to shuffle the word list, making it safer than using the standard random number generator. However:
 
-- **DO NOT** use this tool to generate actual seed phrases for cryptocurrency wallets
-- For actual cryptocurrency wallet creation, always use trusted wallet software that generates truly random seed phrases
-- The randomization in this tool is for display purposes only and should not be considered cryptographically secure
+- While the randomization is cryptographically secure, this tool is still primarily intended for educational and reference purposes
+- For actual cryptocurrency wallet creation, it's recommended to use established wallet software that follows all BIP39 specifications completely
+- This tool only randomizes the display order of all 2048 words, it doesn't generate actual wallet seed phrases (which would be a subset of typically 12 or 24 words)
 
 ## License
 
@@ -66,4 +66,3 @@ This tool is intended for educational and reference purposes only. Please note:
 ## Acknowledgments
 
 - The BIP39 word list is derived from the Bitcoin Improvement Proposal 39, which standardized mnemonic codes for generating deterministic keys
-
